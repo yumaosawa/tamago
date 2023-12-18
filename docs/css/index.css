@@ -1,0 +1,623 @@
+@charset "utf-8";
+
+.first-view {
+  height: calc(100vh - 110px);
+  background-image: url(../images/common/my-logo.png);
+  background-repeat: no-repeat;
+  background-size: 600px;
+  background-position: 100% 50%;
+  display: flex;
+  align-items: center;
+}
+
+.first-view-ttl {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 2;
+  font-weight: lighter;
+}
+
+.first-view-ttl h1 {
+  font-size: 40px;
+}
+
+main {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about {
+  margin: 300px auto 0;
+}
+
+.about-ttl{
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.about-ttl h1 {
+  font-weight: lighter;
+  position: relative;
+}
+
+.about-ttl h1::after {
+  position: absolute;
+  content: "ABOUT";
+  bottom: 0;
+  left: 500px;
+  right: 0;
+  color: #DBDBDB;
+  font-size: 80px;
+  letter-spacing: 30px;
+  z-index: -10;
+  opacity: 0.5;
+}
+
+.about-text {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.about-memo {
+  line-height: 2;
+}
+
+.about-memo-ttl {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.about-memo h2 {
+  font-weight: lighter;
+}
+
+.about-memo h4 {
+  font-weight: lighter;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.about-memo p {
+  font-size: 14px;
+}
+
+.about-img {
+  width: 500px;
+}
+
+.skill {
+  margin: 300px auto 0;
+}
+
+.skill-ttl{
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.skill-ttl h1 {
+  font-weight: lighter;
+  position: relative;
+}
+
+.skill-ttl h1::after {
+  position: absolute;
+  content: "SKILL";
+  bottom: 0;
+  left: 500px;
+  right: 0;
+  color: #DBDBDB;
+  font-size: 80px;
+  letter-spacing: 30px;
+  z-index: -10;
+  opacity: 0.5;
+}
+
+.skill-text i {
+  font-size: 50px;
+}
+
+.item1 {
+  font-size: 15px;
+}
+
+.skill-text {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill-text li {
+  width: 50%;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 90px;
+  display: flex;
+}
+
+.item img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.item-text h4 {
+  margin-bottom: 10px;
+}
+
+.item-text p {
+  font-size: 14px;
+}
+
+.works {
+  margin: 300px auto 0;
+}
+
+.works-ttl{
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.works-ttl h1 {
+  font-weight: lighter;
+  position: relative;
+}
+
+.works-ttl h1::after {
+  position: absolute;
+  content: "WORKS";
+  bottom: 0;
+  left: 500px;
+  right: 0;
+  color: #DBDBDB;
+  font-size: 80px;
+  letter-spacing: 30px;
+  z-index: -10;
+  opacity: 0.5;
+}
+
+.works-text {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 100px;
+  column-gap: 100px;
+}
+
+.works-text img {
+  width: 600px;
+}
+
+.works-hover {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.works-hover .works-site-img {
+  margin: 0;
+  padding: 0;
+}
+
+.works-site-img {
+  width: 100%;
+  height: 100%;
+}
+
+.works-hover .site-txt {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  color: #fff;
+  background-color: rgba(0,0,0,0.40);
+  opacity: 0;
+  transition: .3s ease-in-out;
+}
+
+.works-hover .site-txt .text1 {
+  font-size: 16px;
+  text-align: center;
+  line-height: 2;
+  padding: 100px 0;
+}
+
+.works-hover:hover .site-txt {
+  opacity: 1;
+  padding-top: 10px;
+}
+
+.contact {
+  margin: 300px auto 100px;
+  width: 100%;
+  height: 100%;
+}
+
+.contact-ttl{
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.contact-ttl h1 {
+  font-weight: lighter;
+  position: relative;
+}
+
+.contact-ttl p {
+  font-size: 18px;
+  margin-top: 100px;
+}
+
+.contact-ttl h1::after {
+  position: absolute;
+  content: "CONTACT";
+  bottom: 0;
+  left: 500px;
+  right: 0;
+  color: #DBDBDB;
+  font-size: 70px;
+  letter-spacing: 20px;
+  z-index: -10;
+  opacity: 0.5;
+}
+
+.contact-wrapper {
+  padding: 20px;
+}
+
+.form-horizontal {
+  width: 100%;
+  max-width: 600px;
+  font-weight: 400;
+  margin: 0 auto;
+}
+
+.form-control, 
+textarea {
+  max-width: 600px;
+  width: 100%;
+  margin: 20px 0;
+  border-radius: 5px;
+  padding: 15px 15px;
+}
+
+.send-button {
+  margin-top: 30px;
+  height: 40px;
+  width: 600px;
+  overflow: hidden;
+  transition: all .5s ease-in-out;
+}
+
+.alt-send-button {
+  width: 600px;
+  height: 40px;
+  transition: all .2s ease-in-out;
+}
+
+.alt-send-button i {
+  font-size: 18px;
+  padding-top: 10px;
+}
+
+.send-text {
+  display: block;
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  color: #fff;
+}
+
+.alt-send-button:hover {
+  transform: translate3d(0px, -29px, 0px);
+}
+
+.send-button:hover {
+  background-color: #CD8CFF;
+  border: #fff;
+  border-radius: 5px;
+}
+
+
+
+@media (max-width: 1020px) and (min-width: 765px) {
+  .first-view {
+    height: calc(90vh - 50px);
+    background-size: 300px;
+    background-position: center;
+    position: relative;
+  }
+
+  .first-view-ttl {
+    text-align: center;
+    padding-left: 0;
+    position: absolute;
+    bottom: 20px;
+    padding-left: 20px;
+  }
+
+  .about-text  {
+    flex-flow: column;
+  }
+
+  .about-memo-ttl {
+    display: block;
+    margin-top: 20px
+  }
+
+  .about-memo h4 {
+    padding-top: 0px;
+  }
+
+  .about-ttl h1::after {
+    position: absolute;
+    content: "ABOUT";
+    bottom: 0;
+    left: auto;
+    right: 0;
+    color: #DBDBDB;
+    font-size: 80px;
+    letter-spacing: 30px;
+    z-index: -10;
+    opacity: 0.5;
+  }
+
+  .about {
+    margin-top: 200px;
+  }
+  
+  .skill-ttl h1::after {
+    position: absolute;
+    bottom: 0;
+    left: auto;
+    right: 0;
+    color: #DBDBDB;
+    font-size: 80px;
+    letter-spacing: 30px;
+    z-index: -10;
+    opacity: 0.5;
+  }
+
+  .skill {
+    margin-top: 200px;
+  }
+
+  .works-ttl h1::after {
+    position: absolute;
+    bottom: 0;
+    left: auto;
+    right: 0;
+    color: #DBDBDB;
+    font-size: 80px;
+    letter-spacing: 30px;
+    z-index: -10;
+    opacity: 0.5;
+  }
+
+  .contact {
+    margin-top: 200px;
+  }
+
+  .contact-ttl h1::after {
+    position: absolute;
+    bottom: 0;
+    left: auto;
+    right: 0;
+    color: #DBDBDB;
+    font-size: 80px;
+    letter-spacing: 30px;
+    z-index: -10;
+    opacity: 0.5;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  
+  textarea {
+    font-size: 16px;
+  }
+
+}
+
+
+@media (max-width: 765px) {
+
+
+  .first-view {
+    height: calc(90vh - 50px);
+    background-size: 200px;
+    background-position: center;
+    position: relative;
+  }
+
+  .first-view-ttl {
+    text-align: center;
+    padding-left: 0;
+    position: absolute;
+    bottom: 20px;
+  }
+
+  .first-view-ttl h1 {
+    font-size: 18px;
+  }
+
+  .first-view-ttl h2 {
+    font-size: 12px;
+  }
+
+  .about-ttl h1::after {
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    font-size: 30px;
+  }
+
+  .about-ttl h1 {
+    font-size: 20px;
+  }
+
+  .about {
+    margin-top: 150px;
+  }
+
+  .about-memo-ttl {
+    display: block;
+  }
+
+  .about-memo-ttl h4 {
+    padding-top: 0;
+  }
+
+  .about-text {
+    display: block;
+  }
+
+  .about-img {
+    width: 280px;
+    margin: 0 auto 40px;
+  }
+
+  .about-memo {
+    text-align: center;
+  }
+
+  .about-memo h2 {
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+
+  .about-memo h4 {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  .about-memo p {
+    font-size: 12px;
+  }
+
+  .skill {
+    margin-top: 150px;
+  }
+
+  .skill-ttl h1 {
+    font-size: 18px;
+  }
+
+  .skill-ttl h1::after {
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    font-size: 30px;
+  }
+
+  .skill-ttl h1 {
+    font-size: 20px;
+  }
+
+  .skill-text {
+    display: block;
+  }
+
+  .skill-text li {
+    width: 100%;
+    padding-bottom: 50px;
+  }
+
+  .fa-brands {
+    font-size: 30px;
+  }
+
+  .item-text h4 {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+
+  .item-text p {
+    font-size: 12px;
+  }
+
+  .works {
+    margin-top: 150px;
+  }
+
+  .works-ttl h1 {
+    font-size: 18px;
+  }
+
+  .works-ttl h1::after {
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    font-size: 30px;
+  }
+
+  .works-ttl h1 {
+    font-size: 20px;
+  }
+
+  .works-text {
+    display: block;
+  }
+
+  .works-hover {
+    margin: 30px 0;
+  }
+
+  .contact {
+    margin-top: 150px;
+ }
+
+  .contact-ttl h1 {
+    font-size: 18px;
+  }
+
+  .contact-ttl h1::after {
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    font-size: 30px;
+    letter-spacing: 20px;
+  }
+
+  .contact-ttl h1 {
+    font-size: 20px;
+  }
+
+  .send-button {
+    width: 100%;
+  }
+
+  .contact-ttl p {
+    font-size: 12px;
+    padding: 0 10px;
+  }
+
+  .alt-send-button {
+    width: 100%;
+  }
+
+  .contact-ttl {
+    margin-bottom: 50px;
+  }
+
+  .form-horizontal {
+    max-width: 300px;
+  }
+
+  .form-control {
+    max-width: 300px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  textarea {
+    font-size: 16px;
+  }
+
+}

@@ -1,0 +1,207 @@
+@charset "utf-8";
+
+.main {
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.main-text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-ttl h1 {
+  font-size: 32px;
+  font-weight: lighter;
+  margin-bottom: 80px;
+  padding-bottom: 25px;
+}
+
+.main-ttl {
+  position: relative;
+}
+
+.main-ttl::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  width: 15%;
+  height: 2px;
+  background: #CD8CFF;
+}
+
+.memo-text h2 {
+  font-size: 25px;
+  font-weight: lighter;
+  margin-bottom: 15px;
+}
+
+.memo-text {
+  margin: 70px;
+  border-bottom: 2px solid #DBDBDB;
+  width: 600px;
+  padding-bottom: 10px;
+}
+
+.memo-text p {
+  line-height: 1.5;
+  padding: 15px 0;
+}
+
+.memo-text a {
+  color: #5CB9C5;
+  border-bottom: 1px solid #5CB9C5;
+}
+
+.memo-text a:hover{
+  opacity: 0.7;
+}
+
+.main-img .logo {
+  width: 500px;
+  padding-left: 100px;
+}
+
+.main-img .site {
+  width: 700px;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.design-img {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+
+.design-pc img {
+  width: 500px;
+  box-shadow: 4px 4px 12px rgb(212, 212, 212);
+}
+
+.design-sp img {
+  width: 300px;
+  box-shadow: 4px 4px 12px rgb(212, 212, 212);
+}
+
+.design-pc p {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.design-sp p {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+
+@media (max-width: 1020px) and (min-width: 768px) {
+  .main-text {
+    display: block;
+    text-align: center;
+  }
+
+  .main-ttl::after {
+    width: 100%;
+  }
+
+  .main-ttl h1 {
+    text-align: center;
+  }
+
+  .design-pc img {
+    width: 300px;
+  }
+
+  .design-sp img {
+    width: 200px;
+  }
+
+  .main-img .logo {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-text {
+    display: block;
+  }
+
+  .main {
+    margin-top: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .main-ttl h1 {
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+
+  .main-ttl::after {
+    width: 100%;
+  }
+
+  .memo-text {
+    margin: 30px;
+    width: 300px;
+  }
+
+  .main-img .logo {
+    padding-left: 0px;
+    width: 300px;
+  }
+
+  .main-img {
+    text-align: center;
+  }
+
+  .memo-text h2 {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .memo-text p {
+    font-size: 12px;
+    letter-spacing: 5px;
+  }
+
+  .memo-text a {
+    letter-spacing: 1px;
+  }
+
+  .design-img {
+    display: block;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .design-sp p {
+    font-size: 15px;
+  }
+
+  .design-pc p {
+    font-size: 15px;
+  }
+
+  .design-pc img {
+    width: 300px;
+  }
+
+  .design-sp img {
+    width: 300px;
+  }
+
+  .design-sp {
+    margin-top: 30px;
+  }
+
+}
